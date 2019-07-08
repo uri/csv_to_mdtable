@@ -1,10 +1,29 @@
 # Install
 
-If `~/bin` is in path:
+Installs to `/usr/local`
 
 ```
-make
+make install
 ```
+
+To specify a different location, from example `~/bin`
+
+```
+make PREFIX=$HOME install
+```
+
+Set BIN to customize the name of the executable:
+
+```
+make PREFIX=$HOME BIN=csvmd install
+```
+
+To remove the binary:
+
+```
+make PREFIX=$HOME BIN=csvmd uninstall
+```
+
 
 Otherwise
 
